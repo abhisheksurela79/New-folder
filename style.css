@@ -18,7 +18,7 @@ body {
     background-color: rgb(255, 255, 255);
     margin: 1rem;
     border-radius: 5px;
-    height: calc(1rem - 100vh);
+    height: 93vh;
     position: relative;
     overflow: hidden;
 }
