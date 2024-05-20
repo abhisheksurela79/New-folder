@@ -1,0 +1,119 @@
+#main {
+    display: flex;
+    padding: 1rem 0.5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: calc(100vh - 4.5rem);
+    background-color: #908e8e17;
+    border-radius: 6px;
+    gap: 10px;
+}
+
+section.main-section {
+    width: 30%;
+    min-width: 258px;
+    max-width: 540px;
+    border: 1px solid var(--container-border-color);
+    padding: 2rem 1.5rem 0rem 1.5rem;
+    border-radius: 4px;
+    background-color: white;
+}
+
+input[type=text],
+input[type=button] {
+    display: block;
+    padding: 0.7rem 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    margin-top: 5px;
+    border: 2px solid transparent;
+    font-family: "Tilt Neon", sans-serif;
+    transition: 0.2s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+
+.flex-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    box-sizing: border-box;
+    max-height: calc(2 * 1fr + 10px);
+    overflow: hidden;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.image {
+    background-image: url(./../img/Bahai-House-of-Worship-Lotus-Temple-Delhi-India.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+@media (max-width: 1510px) {
+    .flex-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1318px) {
+    section.main-section {
+        width: 36%;
+    }
+
+    .flex-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1102px) {
+    .flex-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 894px) {
+    #main {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section.main-section {
+        width: 80%;
+        max-width: 613px;
+    }
+
+}
+
+@media (max-width: 776px) {
+    .flex-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.main-section {
+        width: 80%;
+        max-width: 404px;
+    }
+}
+
+@media (max-width: 526px) {
+    .flex-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    section.main-section {
+        width: 80%;
+        max-width: 204px;
+    }
+}
